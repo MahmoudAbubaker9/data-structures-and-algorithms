@@ -194,15 +194,67 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
-  for (let i=0;i<board.length;i++){
-    if (new Set(board[i]).size === 1) {
-      for (let j=0;j<board[i].length;j++){
-        if (!(board[i][j] === '')) {
-          result.push(board[i])
-          };
-        ;}}}
+  const rows = Object.values(rowCreator(board));
+  const cols = Object.values(colCreator(board));
+  const diags = Object.values(diagCreator(board));
+
+  const testingArr = [...rows, ...cols, ...diags];
+
+  let result = null;
+  for (let i = 0; i < testingArr.length; i++) {
+    if (
+      testingArr[i][0] == testingArr[i][1] &&
+      testingArr[i][0] == testingArr[i][2] &&
+      testingArr[i][0]
+    ) {
+      result = true;
+      break;
+    } else {
+      result = false;
+    }
+  }
+  return result;
 };
+
+function rowCreator(board) {
+  let newRow = {
+    0: [],
+    1: [],
+    2: [],
+  };
+  board.forEach((item, idx) => {
+    newRow[idx] = item;
+  });
+  return newRow;
+}
+
+function colCreator(board) {
+  let newCols = {
+    0: [],
+    1: [],
+    2: [],
+  };
+  board.forEach((n, idx) => {
+    n.forEach((m, i) => {
+      newCols[i].push(m);
+    });
+  });
+  return newCols;
+}
+
+function diagCreator(board) {
+  let newDiags = {
+    0: [],
+    1: [],
+  };
+  board.reduce((acc, n, idx) => {
+    newDiags[0].push(n[idx]);
+    newDiags[1].push(n[acc]);
+    acc--;
+    return acc;
+  }, 2);
+  return newDiags;
+}
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
