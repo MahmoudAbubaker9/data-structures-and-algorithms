@@ -8,7 +8,6 @@ public class App {
   //this is the main function.
   public static void main(String[] args) {
     LinkedList<Integer> insertList = new LinkedList<>();
-    System.out.println(mainList.head);
     insertList.insert(1);
     insertList.insert(2);
     insertList.insert(3);
