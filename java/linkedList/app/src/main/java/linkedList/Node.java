@@ -1,12 +1,26 @@
 package linkedList;
 
-public class Node <T> {
-  public Node next;  //declare next variable.
-  public T value;   //declare value variable with generic datatype.
+public class Node {
+  public Node next;
+  public String value;
 
-  //this is the constructor.
-  public Node(T value){
+  public Node(String value){
     this.value=value;
   }
 
+
+  @Override
+  public String toString() {
+    return "Node{" +
+      "value=" + value +
+      '}';
+  }
+
+  public Node next() {
+    return next;
+  }
+
+  public String value() {
+    return value;
+  }
 }
