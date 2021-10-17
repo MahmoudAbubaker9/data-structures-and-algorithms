@@ -2,22 +2,38 @@ package linkedList;
 
 public class LinkedList<T> {
   Node head;
+  private int size;
 
 
   public LinkedList() {
     this.head = null;
   }
 
-  public void insert(T value ) {
-    Node<T> addNode =  new  Node<>(value);
-    addNode.next = head ;
-    head = addNode;
+  public void insert(String insertNode) {
+    if (head == null) {
+      Node node = new Node(insertNode);
+      head = node;
+      size++;
+    } else {
+      Node node = new Node(insertNode);
+      node.next = head;
+      head = node;
+      size++;
+    }
   }
 
-  public boolean includes(T value) {
+  public int getSize() {
+    return size;
+  }
+
+  public void setSize(int size) {
+    this.size = size;
+  }
+
+  public boolean includes(String insertNode) {
     Node current = head;
     while (current.next != null) {
-      if (current.value == value) {
+      if (current.value == insertNode) {
         return true;
       }
       current = current.next;
@@ -25,15 +41,19 @@ public class LinkedList<T> {
     return false;
   }
 
+  @Override
   public String toString() {
-    Node current = head;
-    String finalResult = "";
-    while (current != null) {
-      finalResult += "{" + current.value + "} -> ";
-      current = current.next;
+    String outPut = "";
+    if (head == null) {
+      System.out.println("Empty List ");
+    } else {
+      Node current = head;
+      while (current != null) {
+        outPut = outPut + "{" + current.value() + "}" + " -> ";
+        current = current.next();
+      }
+      outPut =outPut+"NULL";
     }
-    finalResult += "NULL";
-    return finalResult;
+    return outPut;
   }
-
 }
