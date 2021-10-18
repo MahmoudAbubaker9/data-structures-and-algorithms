@@ -15,7 +15,9 @@ class AppTest {
 
   @Test void InsertListTest() {
 
-    LinkedList<Integer> testList = new LinkedList<>();
+    /////////// Lab 5 Test
+
+    LinkedList testList = new LinkedList();
     testList.insert("9");
     testList.insert("2");
     testList.insert("13");
@@ -26,7 +28,7 @@ class AppTest {
   }
 
   @Test void headPropertyListTest() {
-    LinkedList<Integer> testList = new LinkedList<>();
+    LinkedList testList = new LinkedList();
     testList.insert("1");
     testList.insert("2");
     testList.insert("3");
@@ -36,7 +38,7 @@ class AppTest {
   }
 
   @Test void MultiNodeTest() {
-    LinkedList<Integer> testList = new LinkedList<>();
+    LinkedList testList = new LinkedList();
     testList.insert("9");
     testList.insert("8");
     testList.insert("3");
@@ -47,7 +49,7 @@ class AppTest {
   }
 
   @Test void includeTest() {
-    LinkedList<Integer> testList = new LinkedList<>();
+    LinkedList testList = new LinkedList();
     testList.insert("5");
     testList.insert("4");
     testList.insert("13");
@@ -59,13 +61,86 @@ class AppTest {
   }
 
   @Test void returnCollectionTest() {
-    LinkedList<Integer> testList = new LinkedList<>();
+    LinkedList testList = new LinkedList();
     testList.insert("20");
     testList.insert("25");
     testList.insert("88");
     testList.insert("-1");
     testList.insert("45");
     String expected="{45} -> {-1} -> {88} -> {25} -> {20} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  /////////// Lab 6 Test
+
+  @Test void appendTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.append("45");
+    String expected="{20} -> {25} -> {88} -> {-1} -> {45} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  @Test void appendMultipleTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.append("45");
+    testList.append("46");
+    testList.append("47");
+    testList.append("48");
+    testList.append("49");
+
+    String expected="{20} -> {25} -> {88} -> {-1} -> {45} -> {46} -> {47} -> {48} -> {49} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  @Test void insertMiddle () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.insertBefore("88","-55");
+    String expected="{20} -> {25} -> {-55} -> {88} -> {-1} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  @Test void beforeFirstNode () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.insertBefore("20","-55");
+    String expected="{-55} -> {20} -> {25} -> {88} -> {-1} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  @Test void insertAfterMiddle () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.insertAfter("25","-55");
+    String expected="{20} -> {25} -> {-55} -> {88} -> {-1} -> NULL";
+    assertEquals(expected,testList.toString());
+  }
+
+  @Test void insertAfterLast () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.insertAfter("-1","-55");
+    String expected="{20} -> {25} -> {88} -> {-1} -> {-55} -> NULL";
     assertEquals(expected,testList.toString());
   }
 
