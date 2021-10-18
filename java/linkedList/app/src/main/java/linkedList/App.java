@@ -6,10 +6,30 @@ package linkedList;
 public class App {
   public static void main(String[] args) {
     LinkedList<Integer> insertList = new LinkedList<>();
-    insertList.insert("1");
-    insertList.insert("2");
-    insertList.insert("3");
-    insertList.insert("4");
+//    insertList.insert("1");
+//    insertList.insert("2");
+//    insertList.insert("3");
+//    insertList.insert("4");
+
+    ///// append
+//    insertList.append("1");
+//    insertList.append("2");
+//    insertList.append("3");
+//    insertList.append("4");
+
+    ///// insertBefore
+//    insertList.append("1");
+//    insertList.append("2");
+//    insertList.append("3");
+//    insertList.insertBefore("3","6");
+
+    /// afterBefore
+    insertList.append("1");
+    insertList.append("2");
+    insertList.append("3");
+    insertList.insertAfter("3","6");
+
     System.out.println(insertList);
+    
   }
 }
