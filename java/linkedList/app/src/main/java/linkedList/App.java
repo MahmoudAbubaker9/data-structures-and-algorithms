@@ -30,6 +30,6 @@ public class App {
     insertList.insertAfter("3","6");
 
     System.out.println(insertList);
-    
+
   }
 }

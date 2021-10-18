@@ -28,3 +28,59 @@ toString: Returns a string containing all the values of the nodes of the linked 
 big o
 
 time o(n) space o(n)
+
+<!-- Lab 6 -->
+
+# Challenge Summary
+Write a function that add new value :
+1- that add new value after node that has a specific value is in the list (insertAfter)
+
+2- that add new value before node that has a specific value is in the list (insertBefore)
+
+3- adds a new node with value to the end of the list (append)
+
+## Whiteboard Process
+![append](After.jpg)
+![insertBefore](Append.jpg)
+![insertAfter](Before.jpg)
+
+## Approach & Efficiency
+
+### Append
+1-add an instance of node class
+
+2-check if the linklist is empty
+
+if empty let the head equal new node and increase size
+
+3- if not create a new current equal to head node
+
+4- loop using while till the reach last node and make it equal to current and increase size
+
+### insert Before
+
+1-add an instance of node class
+
+2-check if the linklist is empty
+
+if empty print The value is not exist
+else create a new node
+
+4- loop using while loop to compare the current value with
+ the node value if equal make the current value of the node is
+ equaled to the New value of the current
+then increase the size of list
+
+### insert After
+
+1-add an instance of node class
+
+2-check if the linklist is empty
+
+if empty print The value is not exist
+else create a new node
+
+4- loop using while loop to compare the current value with
+ the node value if equal make the next value of the node is
+ equaled to the next value of the current
+then increase the size of list
