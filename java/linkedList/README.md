@@ -92,7 +92,21 @@ then increase the size of list
 write a function that returns the value at the k’th node from the end of the Linked List
 
 ## Whiteboard Process
-![append](kthFromEnd.jpg)
+![kthFromEnd](kthFromEnd.jpg)
+
+## Approach & Efficiency
+while loop to iterate over the linked list nodes
+the complexity:
+time :O(N)
+Space :O(1)
+
+<!-- Lab 8 -->
+
+# Challenge Summary
+write a function that responsible about zipping two linked list together and return one the head for the zipped linked list
+
+## Whiteboard Process
+![zipLists](zipLists.jpg)
 
 ## Approach & Efficiency
 while loop to iterate over the linked list nodes

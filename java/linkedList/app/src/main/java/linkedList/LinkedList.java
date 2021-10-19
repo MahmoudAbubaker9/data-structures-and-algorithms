@@ -126,6 +126,37 @@ public class LinkedList<T> {
     }
   }
 
+  public Node zipLists(LinkedList list1, LinkedList list2) {
+
+    if (list1.head == null){
+      return list2.head;
+    }
+
+    if (list2.head == null){
+      return list1.head;
+    }
+
+    LinkedList newList = new LinkedList();
+
+    newList.head = list1.head;
+    Node current = list1.head;
+    list1.head = list1.head.next;
+
+    while (current != null && list1.head != null || list2.head != null){
+      if (list2.head != null) {
+        current.next = list2.head;
+        list2.head = list2.head.next;
+        current = current.next;
+      }
+      if (list1.head != null) {
+        current.next = list1.head;
+        list1.head = list1.head.next;
+        current = current.next;
+      }
+    }
+    return newList.head;
+  }
+
 
   @Override
   public String toString() {

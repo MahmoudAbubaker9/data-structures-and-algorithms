@@ -7,7 +7,6 @@
     <list default="true" id="e936c825-b73f-4249-a305-2e93510ed131" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
     </list>
@@ -64,7 +63,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.zipHappyPath">
+  <component name="RunManager" selected="Gradle.AppTest.zipHappyTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -73,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.kthHappyPathTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.oneLinkEmptyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthHappyPathTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.oneLinkEmptyTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -94,12 +93,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.kthMinusValueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.oneZipEmptyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthMinusValueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.oneZipEmptyTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -115,33 +114,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.kthNodeSizeOneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.twozipEmptyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthNodeSizeOneTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppTest.kthSameLengthTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthSameLengthTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.twozipEmptyTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -178,20 +156,41 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AppTest.zipHappyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.zipHappyTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Gradle.AppTest.kthSameLengthTest" />
-      <item itemvalue="Gradle.AppTest.kthMinusValueTest" />
-      <item itemvalue="Gradle.AppTest.kthNodeSizeOneTest" />
-      <item itemvalue="Gradle.AppTest.kthHappyPathTest" />
       <item itemvalue="Gradle.AppTest.zipHappyPath" />
+      <item itemvalue="Gradle.AppTest.oneLinkEmptyTest" />
+      <item itemvalue="Gradle.AppTest.twozipEmptyTest" />
+      <item itemvalue="Gradle.AppTest.oneZipEmptyTest" />
+      <item itemvalue="Gradle.AppTest.zipHappyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.zipHappyTest" />
+        <item itemvalue="Gradle.AppTest.oneZipEmptyTest" />
+        <item itemvalue="Gradle.AppTest.twozipEmptyTest" />
+        <item itemvalue="Gradle.AppTest.oneLinkEmptyTest" />
         <item itemvalue="Gradle.AppTest.zipHappyPath" />
-        <item itemvalue="Gradle.AppTest.kthSameLengthTest" />
-        <item itemvalue="Gradle.AppTest.kthHappyPathTest" />
-        <item itemvalue="Gradle.AppTest.kthNodeSizeOneTest" />
-        <item itemvalue="Gradle.AppTest.kthMinusValueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,5 +216,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java</url>
+          <line>202</line>
+          <properties class="linkedList.AppTest" method="zipHappyTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
