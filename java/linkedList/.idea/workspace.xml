@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linkedList/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.insertAfterLast">
+  <component name="RunManager" selected="Gradle.AppTest.zipHappyPath">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -71,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.appendMultipleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.kthHappyPathTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.appendMultipleTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthHappyPathTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -92,12 +94,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.beforeFirstNode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.kthMinusValueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.beforeFirstNode&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthMinusValueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -113,12 +115,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.insertAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.kthNodeSizeOneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.insertAfter&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthNodeSizeOneTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -134,12 +136,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.insertAfterLast" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.kthSameLengthTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.insertAfterLast&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.kthSameLengthTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -155,12 +157,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.insertAfterMiddle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.zipHappyPath" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.insertAfterMiddle&quot;" />
+        <option name="scriptParameters" value="--tests &quot;linkedList.AppTest.zipHappyPath&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,19 +179,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.AppTest.insertAfter" />
-      <item itemvalue="Gradle.AppTest.appendMultipleTest" />
-      <item itemvalue="Gradle.AppTest.beforeFirstNode" />
-      <item itemvalue="Gradle.AppTest.insertAfterMiddle" />
-      <item itemvalue="Gradle.AppTest.insertAfterLast" />
+      <item itemvalue="Gradle.AppTest.kthSameLengthTest" />
+      <item itemvalue="Gradle.AppTest.kthMinusValueTest" />
+      <item itemvalue="Gradle.AppTest.kthNodeSizeOneTest" />
+      <item itemvalue="Gradle.AppTest.kthHappyPathTest" />
+      <item itemvalue="Gradle.AppTest.zipHappyPath" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.insertAfterLast" />
-        <item itemvalue="Gradle.AppTest.insertAfterMiddle" />
-        <item itemvalue="Gradle.AppTest.beforeFirstNode" />
-        <item itemvalue="Gradle.AppTest.appendMultipleTest" />
-        <item itemvalue="Gradle.AppTest.insertAfter" />
+        <item itemvalue="Gradle.AppTest.zipHappyPath" />
+        <item itemvalue="Gradle.AppTest.kthSameLengthTest" />
+        <item itemvalue="Gradle.AppTest.kthHappyPathTest" />
+        <item itemvalue="Gradle.AppTest.kthNodeSizeOneTest" />
+        <item itemvalue="Gradle.AppTest.kthMinusValueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,16 +217,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/linkedList/Node.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

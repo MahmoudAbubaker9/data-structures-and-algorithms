@@ -1,8 +1,10 @@
 package linkedList;
 
+import org.checkerframework.checker.units.qual.Length;
+
 public class LinkedList<T> {
   Node head;
-  private int size;
+  private int size =0;
 
 
   public LinkedList() {
@@ -97,6 +99,32 @@ public class LinkedList<T> {
     }
   }
 
+  public String kthFromEnd(int k) {
+    if (head == null) {
+      return "Exception -> List is empty";
+    }
+
+    Node current = head;
+    int nodeLength = 0;
+    while (current != null) {
+      nodeLength++;
+      current = current.next;
+    }
+    if(k > nodeLength || k < 0) {
+      return "Exception -> the number should be from 0 to "+nodeLength+" (Node Length)";
+    } else {
+      current = head;
+      int kLocation = nodeLength - k ;
+      for (int i = 0; i <= kLocation; i++) {
+        if (i == kLocation) {
+          return "{"+k+"th node value from the end is: {" + current.value + "}";
+
+        }
+        current = current.next;
+      }
+      return "Exception";
+    }
+  }
 
 
   @Override

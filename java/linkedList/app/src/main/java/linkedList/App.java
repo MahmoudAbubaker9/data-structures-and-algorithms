@@ -27,9 +27,12 @@ public class App {
     insertList.append("1");
     insertList.append("2");
     insertList.append("3");
-    insertList.insertAfter("3","6");
+    insertList.append("4");
+    insertList.append("5");
 
-    System.out.println(insertList);
+    System.out.println(insertList.kthFromEnd(2));
+
+
 
   }
 }
