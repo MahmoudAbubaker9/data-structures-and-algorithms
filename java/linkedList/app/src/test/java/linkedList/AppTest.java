@@ -144,7 +144,7 @@ class AppTest {
     assertEquals(expected,testList.toString());
   }
 
-  /////////// Lab 6 Test
+  /////////// Lab 7 Test
 
   @Test void kthGreaterTest () {
     LinkedList testList = new LinkedList();
@@ -197,6 +197,42 @@ class AppTest {
     String output = testList.kthFromEnd(3);
     String expected="{3th node value from the end is: {88}";
     assertEquals(expected,output);
+  }
+
+  /////////// Lab 8 Test
+  @Test void zipHappyTest () {
+    LinkedList testList1 = new LinkedList();
+    LinkedList testList2 = new LinkedList();
+    testList1.append("20");
+    testList1.append("25");
+    testList1.append("88");
+    testList1.append("-1");
+    testList2.append("45");
+    testList2.append("46");
+    testList2.append("47");
+    testList2.append("48");
+
+    LinkedList testAllList = new LinkedList();
+    testAllList.head = testAllList.zipLists(testList1,testList2);
+    String expected = "{20} -> {45} -> {25} -> {46} -> {88} -> {47} -> {-1} -> {48} -> NULL";
+
+    assertEquals( expected , testAllList.toString());
+  }
+
+  @Test void oneZipEmptyTest () {
+    LinkedList testList1 = new LinkedList();
+    LinkedList testList2 = new LinkedList();
+    testList1.append("20");
+    testList1.append("25");
+    testList1.append("88");
+    testList1.append("-1");
+
+
+    LinkedList testAllList = new LinkedList();
+    testAllList.head = testAllList.zipLists(testList1,testList2);
+    String expected = "{20} -> {25} -> {88} -> {-1} -> NULL";
+
+    assertEquals( expected , testAllList.toString());
   }
 
 }
