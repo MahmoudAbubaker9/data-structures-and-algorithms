@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
   @Test void emptyTest() {
-    LinkedList<Integer> emptyList = new LinkedList<>();
+    LinkedList emptyList = new LinkedList();
     String expected="NULL";
     assertEquals(expected,emptyList.toString());
   }
@@ -144,5 +144,59 @@ class AppTest {
     assertEquals(expected,testList.toString());
   }
 
+  /////////// Lab 6 Test
+
+  @Test void kthGreaterTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    String output = testList.kthFromEnd(10);
+    String expected="Exception -> the number should be from 0 to 4 (Node Length)";
+    assertEquals(expected,output);
+  }
+
+  @Test void kthSameLengthTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    String expected="{4th node value from the end is: {20}";
+    String output = testList.kthFromEnd(4);
+    assertEquals(expected,output);
+  }
+
+  @Test void kthMinusValueTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    String output = testList.kthFromEnd(-1);
+    String expected="Exception -> the number should be from 0 to 4 (Node Length)";
+    assertEquals(expected,output);
+  }
+
+  @Test void kthNodeSizeOneTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    String output = testList.kthFromEnd(1);
+    String expected="{1th node value from the end is: {20}";
+    assertEquals(expected,output);
+  }
+
+  @Test void kthHappyPathTest () {
+    LinkedList testList = new LinkedList();
+    testList.append("20");
+    testList.append("25");
+    testList.append("88");
+    testList.append("-1");
+    testList.append("-55");
+    String output = testList.kthFromEnd(3);
+    String expected="{3th node value from the end is: {88}";
+    assertEquals(expected,output);
+  }
 
 }
