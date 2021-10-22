@@ -1,7 +1,5 @@
 package linkedList;
 
-import org.checkerframework.checker.units.qual.Length;
-
 public class LinkedList<T> {
   Node head;
   private int size =0;
@@ -158,6 +156,22 @@ public class LinkedList<T> {
   }
 
 
+  public void reverseList(){
+    if (head == null) {
+      System.out.println("the ListList is empty");
+    }
+    Node current = this.head;
+    Node nextNode = null ;
+    Node previousNode = null;
+    while (current!=null){
+      nextNode = current.getNext();
+      current.setNext(previousNode);
+      previousNode = current;
+      current= nextNode;
+    }
+    this.head = previousNode;
+  }
+
   @Override
   public String toString() {
     String outPut = "";
@@ -167,7 +181,7 @@ public class LinkedList<T> {
       Node current = head;
       while (current != null) {
         outPut = outPut + "{" + current.value() + "}" + " -> ";
-        current = current.next();
+        current = current.getNext();
       }
       outPut =outPut+"NULL";
     }
