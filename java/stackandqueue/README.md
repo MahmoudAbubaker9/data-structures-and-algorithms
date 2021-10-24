@@ -1,4 +1,4 @@
-# Stacks and Queues
+# Stacks and Queues Lab 10
 
 Stack : used to store data in a last in first out format, meaning that the last item added onto the stack is the first item that will be removed from it.
 
@@ -42,4 +42,40 @@ Queues are:
 2. Dequeue : this method removes an element from the front of the queue
 3. Peek : This function returns the value of the topmost element available in the stack.
 4. IsEmpty : If the stack is empty, then this function will return a true value or else it will return a false value.
+
+# PseudoQueue  Lab 11
+
+# Challenge Summary
+Implement a Queue using two Stacks using enqueue and dequeue method
+
+## Whiteboard Process
+![PseudoQueue](PseudoQueue.jpg)
+
+## Approach & Efficiency
+
+For all method Time:
+
+Time : O(N)
+Space : O(1)
+
+## Solution
+
+```
+  public void enqueue(String value) {
+    stackOne.push(value);
+  }
+
+
+  public String dequeue() {
+    {
+      while (stackOne.top != null){
+        stackTwo.push(stackOne.pop());
+      }
+      String stackPop= stackTwo.pop();
+      while (stackTwo.top != null){
+        stackOne.push(stackTwo.pop());
+      }
+      return stackPop;
+    }}
+```
 
