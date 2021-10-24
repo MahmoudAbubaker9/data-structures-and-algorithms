@@ -3,6 +3,7 @@
  */
 package stackandqueue;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -152,6 +153,27 @@ class AppTest {
     Queue queueTest = new Queue();
     String expected = "The List is empty";
     assertEquals(expected, queueTest.peek());
+  }
+
+  @Test void enqueuePesudoQueue(){
+    PseudoQueue pseudoTest=new PseudoQueue();
+    pseudoTest.enqueue("20");
+    pseudoTest.enqueue("25");
+    pseudoTest.enqueue("88");
+    pseudoTest.enqueue("-1");
+    String expected = "{-1} -> {88} -> {25} -> {20} -> {Null}";
+    assertEquals(expected,pseudoTest.toString());
+  }
+
+  @Test void dequeuePesudoQueue(){
+    PseudoQueue pseudoTest=new PseudoQueue();
+    pseudoTest.enqueue("20");
+    pseudoTest.enqueue("25");
+    pseudoTest.enqueue("88");
+    pseudoTest.enqueue("-1");
+    pseudoTest.dequeue();
+    String expected = "{-1} -> {88} -> {25} -> {Null}";
+    assertEquals(expected,pseudoTest.toString());
   }
 
 
