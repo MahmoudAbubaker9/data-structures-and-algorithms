@@ -176,5 +176,30 @@ class AppTest {
     assertEquals(expected,pseudoTest.toString());
   }
 
+  @Test void AnimalNullTest(){
+    AnimalShelter Animal = new AnimalShelter();
+    Animal.enqueue(new Cat("Cat"));
+    Animal.enqueue(new Dog("Dog"));
+    Animal.dequeue("catList");
+    Animal.dequeue("dogList");
+    String expected = "AnimalShelter{catList=The List is empty, dogList=The List is empty}";
+    assertEquals(expected,Animal.toString());
+  }
+
+
+  @Test void AnimalShelterTest(){
+    AnimalShelter Animal = new AnimalShelter();
+    Animal.enqueue(new Cat("Cat1"));
+    Animal.enqueue(new Cat("Cat2"));
+    Animal.enqueue(new Cat("Cat3"));
+    Animal.enqueue(new Dog("Dog1"));
+    Animal.enqueue(new Dog("Dog2"));
+    Animal.dequeue("catList");
+    Animal.dequeue("catList");
+    Animal.dequeue("dogList");
+    String expected = "AnimalShelter{catList={Cat3} -> {Null}, dogList={Dog2} -> {Null}}";
+
+    assertEquals(expected,Animal.toString());
+  }
 
 }

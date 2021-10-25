@@ -79,3 +79,24 @@ Space : O(1)
     }}
 ```
 
+# AnimalShelter  Lab 12
+
+# Challenge Summary
+An animal shelter, which holds only dogs and cats, operates on a strictly"first in, first out" basis
+and will receive the oldest animal of that type
+
+## Whiteboard Process
+![AnimalShelter](AnimalShelter.jpg)
+
+## Approach & Efficiency
+
+Time : O(N)
+Space : O(1)
+
+enqueue(Animal):
+Will act the same ad the enqueue method of the queue which we already have.
+
+dequeue(pref):
+in dequeue check if the value pref equals to the dog or cat and dequeue from queue animl
+if neither cat mor dog then i will return null
+
