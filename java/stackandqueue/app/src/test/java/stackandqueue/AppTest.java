@@ -9,67 +9,67 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
-  @Test void pushTest() {
-    Stack stackTest = new Stack();
-    stackTest.push("20");
-    stackTest.push("25");
-    stackTest.push("88");
-    stackTest.push("-1");
-    String expected = "{-1} -> {88} -> {25} -> {20} -> {Null}";
-    assertEquals(expected, stackTest.toString());
-  }
-
-  @Test void pushMultiTest() {
-    Stack stackTest = new Stack();
-    stackTest.push("20");
-    stackTest.push("25");
-    stackTest.push("88");
-    stackTest.push("-1");
-    stackTest.push("45");
-    stackTest.push("46");
-    stackTest.push("47");
-    stackTest.push("48");
-
-    String expected = "{48} -> {47} -> {46} -> {45} -> {-1} -> {88} -> {25} -> {20} -> {Null}";
-    assertEquals(expected, stackTest.toString());
-  }
-
-  @Test void popTest() {
-    Stack stackTest = new Stack();
-    stackTest.push("20");
-    stackTest.push("25");
-    stackTest.push("88");
-    stackTest.push("-1");
-    String expected = "{-1} -> {88} -> {25} -> {20} -> {Null}";
-    assertEquals(expected, stackTest.toString());
-    stackTest.pop();
-    String expected1 = "{88} -> {25} -> {20} -> {Null}";
-    assertEquals(expected1, stackTest.toString());
-  }
-
-  @Test void popMultiTest() {
-    Stack stackTest = new Stack();
-    stackTest.push("20");
-    stackTest.push("25");
-    stackTest.push("88");
-    stackTest.push("-1");
-    stackTest.pop();
-    stackTest.pop();
-    stackTest.pop();
-    stackTest.pop();
-    String expected = "The List is empty";
-    assertEquals(expected, stackTest.toString());
-  }
-
-  @Test void peekTest() {
-    Stack stackTest = new Stack();
-    stackTest.push("20");
-    stackTest.push("25");
-    stackTest.push("88");
-    stackTest.push("-1");
-    String expected = "-1";
-    assertEquals(expected, stackTest.peek());
-  }
+//  @Test void pushTest() {
+//    Stack stackTest = new Stack();
+//    stackTest.push("20");
+//    stackTest.push("25");
+//    stackTest.push("88");
+//    stackTest.push("-1");
+//    String expected = "{-1} -> {88} -> {25} -> {20} -> {Null}";
+//    assertEquals(expected, stackTest.toString());
+//  }
+//
+//  @Test void pushMultiTest() {
+//    Stack stackTest = new Stack();
+//    stackTest.push("20");
+//    stackTest.push("25");
+//    stackTest.push("88");
+//    stackTest.push("-1");
+//    stackTest.push("45");
+//    stackTest.push("46");
+//    stackTest.push("47");
+//    stackTest.push("48");
+//
+//    String expected = "{48} -> {47} -> {46} -> {45} -> {-1} -> {88} -> {25} -> {20} -> {Null}";
+//    assertEquals(expected, stackTest.toString());
+//  }
+//
+//  @Test void popTest() {
+//    Stack stackTest = new Stack();
+//    stackTest.push("20");
+//    stackTest.push("25");
+//    stackTest.push("88");
+//    stackTest.push("-1");
+//    String expected = "{-1} -> {88} -> {25} -> {20} -> {Null}";
+//    assertEquals(expected, stackTest.toString());
+//    stackTest.pop();
+//    String expected1 = "{88} -> {25} -> {20} -> {Null}";
+//    assertEquals(expected1, stackTest.toString());
+//  }
+//
+//  @Test void popMultiTest() {
+//    Stack stackTest = new Stack();
+//    stackTest.push("20");
+//    stackTest.push("25");
+//    stackTest.push("88");
+//    stackTest.push("-1");
+//    stackTest.pop();
+//    stackTest.pop();
+//    stackTest.pop();
+//    stackTest.pop();
+//    String expected = "The List is empty";
+//    assertEquals(expected, stackTest.toString());
+//  }
+//
+//  @Test void peekTest() {
+//    Stack stackTest = new Stack();
+//    stackTest.push("20");
+//    stackTest.push("25");
+//    stackTest.push("88");
+//    stackTest.push("-1");
+//    String expected = "-1";
+//    assertEquals(expected, stackTest.peek());
+//  }
 
   @Test void instEmptyTest() {
     Stack stackTest = new Stack();
@@ -200,6 +200,20 @@ class AppTest {
     String expected = "AnimalShelter{catList={Cat3} -> {Null}, dogList={Dog2} -> {Null}}";
 
     assertEquals(expected,Animal.toString());
+  }
+
+  @Test
+  void test1() {
+    Brackets BracketsTest= new Brackets();
+    String test= "{{}}"; // true
+    String test1= "{{(())}}"; // true
+    String test2= "{{((}}"; // false
+    String test3= "{{))}}"; // false
+
+    assertEquals(true, BracketsTest.validateBrackets(test));
+    assertEquals(true, BracketsTest.validateBrackets(test1));
+    assertEquals(false, BracketsTest.validateBrackets(test2));
+    assertEquals(false, BracketsTest.validateBrackets(test3));
   }
 
 }

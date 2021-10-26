@@ -3,9 +3,9 @@ package stackandqueue;
 public class Node {
 
   private Node next;
-  private String value;
+  private char value;
 
-  public Node(String value) {
+  public Node(char value) {
     this.value = value;
   }
 

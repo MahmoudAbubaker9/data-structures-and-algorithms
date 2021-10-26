@@ -100,3 +100,22 @@ dequeue(pref):
 in dequeue check if the value pref equals to the dog or cat and dequeue from queue animl
 if neither cat mor dog then i will return null
 
+# Stack Queue Brackets  Lab 13
+
+# Challenge Summary
+Write a function called validate brackets Return true or false representing whether or not the brackets in the string are balanced
+
+## Whiteboard Process
+![bracket](bracket.jpg)
+
+## Approach & Efficiency
+
+Time : O(N)
+Space : O(1)
+
+using for loop and if  the current character is a open beacket then push it to stack
+if the current char is closing bracket then pop to stack
+
+
+
+
