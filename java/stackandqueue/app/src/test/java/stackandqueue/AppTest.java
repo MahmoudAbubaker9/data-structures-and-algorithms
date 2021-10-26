@@ -206,8 +206,8 @@ class AppTest {
   void test1() {
     Brackets BracketsTest= new Brackets();
     String test= "{{}}"; // true
-    String test1= "{{(())}}"; // true
-    String test2= "{{((}}"; // false
+    String test1= "{}"; // true
+    String test2= "{{(}}"; // false
     String test3= "{{))}}"; // false
 
     assertEquals(true, BracketsTest.validateBrackets(test));
