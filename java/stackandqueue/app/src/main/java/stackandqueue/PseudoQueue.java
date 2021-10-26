@@ -9,12 +9,12 @@ public class PseudoQueue {
   }
 
 
-  public char dequeue() {
+  public String dequeue() {
     {
       while (stackOne.top != null){
         stackTwo.push(stackOne.pop());
       }
-      char stackPop= stackTwo.pop();
+      String stackPop= stackTwo.pop();
       while (stackTwo.top != null){
         stackOne.push(stackTwo.pop());
       }

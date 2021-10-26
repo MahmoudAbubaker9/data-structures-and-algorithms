@@ -1,11 +1,10 @@
 package stackandqueue;
 
 public class Node {
-
   private Node next;
-  private char value;
+  private String value;
 
-  public Node(char value) {
+  public Node(String value) {
     this.value = value;
   }
 

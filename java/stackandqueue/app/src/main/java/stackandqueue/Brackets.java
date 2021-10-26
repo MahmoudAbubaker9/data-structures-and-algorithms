@@ -1,7 +1,10 @@
 package stackandqueue;
 
-public class Brackets {
+import java.util.Stack;
 
+public class Brackets<T> {
+
+  Stack<Character> bracketStack = new Stack<>();
 
   public static boolean validateBrackets(String stc) {
     Stack bracketStack = new Stack();
@@ -13,18 +16,18 @@ public class Brackets {
         return false;
       }
 
-      String bracket;
+      char bracket;
 
       if (stc.charAt(i) == ')') {
-        bracket = bracketStack.pop();
+        bracket = (char) bracketStack.pop();
         if (bracket == '{' || bracket == '[')
           return false;
       } else if (stc.charAt(i) == '}') {
-        bracket = bracketStack.pop();
+        bracket = (char) bracketStack.pop();
         if (bracket == '(' || bracket == '[')
           return false;
       } else if (stc.charAt(i) == ']') {
-        bracket = bracketStack.pop();
+        bracket = (char) bracketStack.pop();
         if (bracket == '(' || bracket == '{')
           return false;
       }

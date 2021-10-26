@@ -17,7 +17,7 @@ public class Stack {
       top = addNode;
       size++;
     }
-    }
+  }
 
   public String pop (){
     if(top == null) {
@@ -41,7 +41,7 @@ public class Stack {
 
   public boolean isEmpty() {
     if (top == null) {
-    return true;
+      return true;
     }else {
       return false;
     }
