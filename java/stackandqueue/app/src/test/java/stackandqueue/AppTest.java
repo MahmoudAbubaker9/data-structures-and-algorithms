@@ -216,4 +216,20 @@ class AppTest {
     assertEquals(false, BracketsTest.validateBrackets(test3));
   }
 
+  @Test
+  void duckTest(){
+    Queue queueDucke = new Queue();
+    queueDucke.enqueue("2");
+    queueDucke.enqueue("3");
+    queueDucke.enqueue("4");
+    queueDucke.enqueue("5");
+    queueDucke.enqueue("6");
+    queueDucke.enqueue("7");
+    String exp = "asasas";
+
+    assertEquals("asadasd", queueDucke.toString());
+
+
+  }
+
 }

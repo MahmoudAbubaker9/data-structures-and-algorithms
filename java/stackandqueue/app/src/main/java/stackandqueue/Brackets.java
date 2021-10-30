@@ -4,10 +4,9 @@ import java.util.Stack;
 
 public class Brackets<T> {
 
-  Stack<Character> bracketStack = new Stack<>();
 
   public static boolean validateBrackets(String stc) {
-    Stack bracketStack = new Stack();
+    Stack<Character> bracketStack = new Stack<>();
     for (int i = 0; i < stc.length(); i++) {
       if (stc.charAt(i) == '{' || stc.charAt(i) == '[' || stc.charAt(i) == '(') {
         bracketStack.push(stc.charAt(i));
@@ -34,4 +33,6 @@ public class Brackets<T> {
     }
     return (bracketStack.isEmpty());
   }
+
+
 }
