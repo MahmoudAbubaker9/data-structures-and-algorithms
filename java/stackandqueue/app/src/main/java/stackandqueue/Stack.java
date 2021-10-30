@@ -47,6 +47,7 @@ public class Stack {
     }
   }
 
+
   @Override
   public String toString() {
     if (top == null) {

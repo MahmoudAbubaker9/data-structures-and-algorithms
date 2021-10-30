@@ -47,6 +47,21 @@ public class Queue {
     }
   }
 
+  public  String DuckDuckGoose(String[] arr,int k){
+    Queue duckQueue=new Queue();
+    for (int i=0;i<arr.length;i++) {
+      duckQueue.enqueue(arr[i]);
+    }
+    for (int i=0;i<arr.length-1;i++) {
+      for (int x = 1; x < k; x++) {
+        duckQueue.enqueue(duckQueue.dequeue());
+      }
+      duckQueue.dequeue();
+    }
+    return duckQueue.dequeue();
+
+  }
+
 
   @Override
   public String toString() {
