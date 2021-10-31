@@ -4,17 +4,18 @@ import java.util.ArrayList;
 
 public class BinaryTree<T> {
   Node<T> root;
+  private int max = 0;
 
   public ArrayList<T> inOrder(Node root) {
-    ArrayList <T> InOrderOut = new ArrayList<>();
-    if(root != null){
+    ArrayList<T> InOrderOut = new ArrayList<>();
+    if (root != null) {
 
-      if(root.left != null)
+      if (root.left != null)
         InOrderOut.addAll(inOrder(root.left));
 
       InOrderOut.add((T) root.value);
 
-      if(root.right != null)
+      if (root.right != null)
         InOrderOut.addAll(inOrder(root.right));
     }
     return InOrderOut;
@@ -42,5 +43,20 @@ public class BinaryTree<T> {
       postOrderOut.add((T) root.value);
     }
     return postOrderOut;
+  }
+
+  public String treeMax(){
+    if (root == null) {
+      return "Empty";
+    }
+    int max = 0;
+    ArrayList<T> maxTree = preOrder(root);
+
+    for (int i = 0; i < maxTree.size(); i++) {
+      if(Integer.parseInt(""+maxTree.get(i)) > max){
+        max =Integer.parseInt(""+maxTree.get(i));
+      }
+    }
+    return "The maximum number is "+max;
   }
 }

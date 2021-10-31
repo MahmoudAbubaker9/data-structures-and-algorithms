@@ -116,27 +116,7 @@ Space : O(1)
 using for loop and if  the current character is a open beacket then push it to stack
 if the current char is closing bracket then pop to stack
 
-## Tree  Lab 15
 
-# Challenge Summary
-
-1. Create a BinaryTree class
-
-Define a method for each of the depth first traversals called, preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately
-
-2. Create a BinarySearchTree class
-
-* Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
-* Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
-
-## Approach & Efficiency
-
-1. For (pre order , in order , post order)
-
-O(n) for the time and the space
-
-2. For (Add  , Contains )
-   O(n) for the time and the space
 
 
 
