@@ -4,56 +4,56 @@ package trees;
 public class BinarySearchTree<T> extends BinaryTree{
 
   public void add(T value) {
-    value = (T) value;
+    this.root= new Node<>(value);
     Node node = new Node(value);
 
-
-      if(value != null){
-        Node current = str;
+    if(root != null){
+        Node current = root;
 
         while(current != null){
-          if((int) value > (int) current.getValue()  ){
-            if(current.getRight() == null){
-              current.setRight(node);
+          if((int) value > (int) current.value  ){
+            if(current.right == null){
+              current.right = node;
               return;
             }
-            current = current.getRight();
+            current = current.right;
 
           }
           else{
-            if(current.getLeft() == null){
-              current.setLeft(node);
+            if(current.left == null){
+              current.left = node;
               return;
             }
-            current = current.getLeft();
+            current = current.left;
           }
         }
       }else {
-        str = node;
+        root = node;
       }
     }
 
   public boolean contains(T value) {
+    this.root= new Node<>(value);
     value = (T) value;
 
-      if (str != null) {
-        Node current = str;
+      if (root != null) {
+        Node current = root;
         while (current != null) {
-          if ((int) value == (int) current.getValue()){
+          if ((int) value == (int) current.value){
             return true;
           }
 
-          if ((int) value > (int) current.getValue()) {
-            if (current.getRight() == null) {
+          if ((int) value > (int) current.value) {
+            if (current.right == null) {
               return false;
             }
-            current = current.getRight();
+            current = current.right;
 
           } else {
-            if (current.getLeft() == null) {
+            if (current.left == null) {
               return false;
             }
-            current = current.getLeft();
+            current = current.left;
           }
         }
       } else {
