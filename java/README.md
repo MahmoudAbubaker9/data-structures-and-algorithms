@@ -13,5 +13,9 @@
 | Code Challenge 08 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/linkedList/README.md)|
 | Code Challenge 09 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/linkedList/README.md)|
 | Code Challenge 10 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/stackandqueue/README.md)|
-| Code Challenge 10 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/stackandqueue/README.md)|
+| Code Challenge 11 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/stackandqueue/README.md)|
+| Code Challenge 12 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/stackandqueue/README.md)|
+| Code Challenge 13 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/stackandqueue/README.md)|
+| Code Challenge 15 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/trees/README.md)|
+| Code Challenge 16 | [code08](https://github.com/MahmoudAbubaker9/data-structures-and-algorithms/blob/main/java/trees/README.md)|
 

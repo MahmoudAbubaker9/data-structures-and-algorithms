@@ -72,6 +72,18 @@ class AppTest {
 
   }
 
+  @Test
+  public void maxTreeTest(){
+    BinarySearchTree<Integer> maxTree = new BinarySearchTree<>();
+    maxTree.add(1);
+    maxTree.add(2);
+    maxTree.add(3);
+    maxTree.add(4);
+    maxTree.add(5);
+    maxTree.add(6);
+    assertEquals("The maximum number is 6", maxTree.treeMax());
+  }
+
 
 
 
