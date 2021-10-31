@@ -4,6 +4,10 @@
 package trees;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -19,22 +23,55 @@ class AppTest {
   }
 
   @Test
-  void InstantiateTreeWithSingleRoot() {
+  void InstantiateTreeWithSingleTest() {
     BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
     binarySearchTree.add(1);
-    assertEquals(1, binarySearchTree.str.getValue());
+    assertEquals(1, binarySearchTree.root.value);
   }
 
   @Test
-  void LeftAndRightChildToSingleRoot() {
+  void LeftAndRightChildTest() {
     BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
-    binarySearchTree.add(1);
     binarySearchTree.add(2);
     binarySearchTree.add(3);
-    assertEquals(1, binarySearchTree.str.getValue());
-    assertEquals(2, binarySearchTree.str.getLeft().getValue());
-    assertEquals(3, binarySearchTree.str.getRight().getValue());
+    binarySearchTree.add(1);
+    assertEquals(2, binarySearchTree.root.value);
+    assertEquals(1, binarySearchTree.root.left.value);
+    assertEquals(3, binarySearchTree.root.right.value);
   }
+
+  @Test
+  void preorderTest() {
+    BinarySearchTree binarySearchTree = new BinarySearchTree();
+    binarySearchTree.add(2);
+    binarySearchTree.add(1);
+    binarySearchTree.add(3);
+    assertEquals(Arrays.asList(1,2,3).toArray(), binarySearchTree.preOrder(binarySearchTree.root).toArray());
+
+  }
+
+  @Test
+  void inorderTest() {
+    BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+    binarySearchTree.add(2);
+    binarySearchTree.add(1);
+    binarySearchTree.add(3);
+    assertEquals(Arrays.asList(5,1,6).toArray(), binarySearchTree.inOrder(binarySearchTree.root).toArray());
+
+  }
+
+
+  // Can successfully return a collection from a postorder traversal
+  @Test
+  void postorderTest() {
+    BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+    binarySearchTree.add(5);
+    binarySearchTree.add(1);
+    binarySearchTree.add(6);
+    assertEquals(Arrays.asList(2).toArray(), binarySearchTree.postOrder(binarySearchTree.root).toArray());
+
+  }
+
 
 
 
