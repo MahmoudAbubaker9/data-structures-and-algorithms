@@ -52,4 +52,18 @@ ArrayList<T> maxTree = preOrder(root);
 
 ```
 
+## tree breadth first Lab 17
+
+# Challenge Summary
+Write a function called breadth first that take the tree as Arguments and Return list of all values in the tree, in the order they were encountered
+
+## Whiteboard Process
+![treebreadthfirst](treebreadthfirst.jpg)
+
+## Approach & Efficiency
+
+Time : O(N)
+Space : O(N)
+
+
 

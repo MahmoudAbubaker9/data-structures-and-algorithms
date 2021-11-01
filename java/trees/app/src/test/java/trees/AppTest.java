@@ -83,6 +83,17 @@ class AppTest {
     maxTree.add(6);
     assertEquals("The maximum number is 6", maxTree.treeMax());
   }
+  @Test
+  void BreadthFirstL(){
+    BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+    binarySearchTree.add(1);
+    binarySearchTree.add(2);
+    binarySearchTree.add(3);
+    binarySearchTree.add(4);
+    binarySearchTree.add(5);
+    binarySearchTree.add(6);
+    assertEquals("[1, 2, 3, 4, 5, 6]" , binarySearchTree.breadthFirst(binarySearchTree.root).toString());
+  }
 
 
 

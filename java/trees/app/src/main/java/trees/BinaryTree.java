@@ -1,6 +1,7 @@
 package trees;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class BinaryTree<T> {
   Node<T> root;
@@ -59,4 +60,33 @@ public class BinaryTree<T> {
     }
     return "The maximum number is "+max;
   }
+
+
+  public ArrayList<T> breadthFirst(Node root) {
+
+    ArrayList<T> breadthTree = new ArrayList<>();
+    LinkedList<Node> breadthList = new LinkedList<>();
+
+    Node current = this.root;
+
+    if (this.root != null) {
+      breadthList.add(current);
+      for (int i = 0; i < breadthTree.size(); i++) {
+        current = breadthList.get(i);
+        if (current.left != null) {
+          breadthList.add(current.left);
+        }
+        if (current.right != null) {
+          breadthList.add(current.right);
+        }
+      }
+    }
+    for (int j = 0; j < breadthList.size(); j++) {
+      breadthTree.add((T)breadthList.get(j).value);
+    }
+    return breadthTree;
+  }
+
+
 }
+
