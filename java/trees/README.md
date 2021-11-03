@@ -65,5 +65,25 @@ Write a function called breadth first that take the tree as Arguments and Return
 Time : O(N)
 Space : O(N)
 
+## tree-fizz-buzz Lab 18
+
+# Challenge Summary
+Write a function called fizz buzz tree with k-ary tree arguments
+and return k-ary value If the value is divisible by 3, return “Fizz”
+and If the value is divisible by 5, return “Buzz”
+If the value is divisible by 3 and 5, return “FizzBuzz”
+If the value is not divisible by 3 or 5, return String.
+
+## Whiteboard Process
+![FizzBuzz](FizzBuzz.jpg)
+
+## Approach & Efficiency
+
+Time : O(N)
+Space : O(N)
+
+us if statmant to check if the node divisible by 5 or 3 to return "Fizz or Buzz"
+if the value divisible by 5 and 3 will return FizzBuzz
+
 
 
