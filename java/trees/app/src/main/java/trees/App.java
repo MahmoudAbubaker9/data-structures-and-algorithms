@@ -10,5 +10,17 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+      TreeFizzBuzz tree = new TreeFizzBuzz();
+      tree.root = new KNode(1);
+      tree.root.left = new KNode(3);
+      tree.root.right = new KNode(5);
+      tree.root.left.left = new KNode(15);
+      tree.root.left.right = new KNode(10);
+      tree.root.right.left = new KNode(4);
+      tree.root.right.right = new KNode(6);
+      tree.fizzBuzzTree(tree.root);
     }
+
+
 }
