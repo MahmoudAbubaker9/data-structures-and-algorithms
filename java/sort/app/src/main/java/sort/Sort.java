@@ -2,6 +2,8 @@ package sort;
 
 public class Sort {
 
+  /////// insertion Sort
+
   public int[] insertionSort(int[] array){
     int n = array.length;
 
@@ -20,6 +22,8 @@ public class Sort {
     }
     return array;
   }
+
+  ////// Merge Sort
 
   public void mergeSort (int arr[], int l, int m, int r){
     int i, j, k;
@@ -79,6 +83,43 @@ public class Sort {
       mergeSort(arr, l, m, r);
     }
     return arr;
+  }
+
+  /// Quick Sort
+
+  private static int partition(int[] arr, int left, int right){
+    int pivot = arr[right];
+    int low = left - 1;
+    for (int i = left ; i < right ; i++){
+      if (arr[i] <= pivot){
+        low++;
+        swap(arr, i, low);
+      }
+    }
+    swap(arr, right, low+1);
+    return low+1;
+  }
+
+  private static void swap(int[] arr, int i, int low){
+    int temp = arr[i];
+    arr[i] = arr[low];
+    arr[low] = temp;
+  }
+
+  public int[] quickSort(int[] arr){
+    int n= arr.length;
+    quick(arr, 0, n-1);
+    return arr;
+  }
+
+  private static void quick(int[] arr, int left, int right){
+    if(left < right){
+      int position = partition(arr, left, right);
+
+      quick(arr, left, position - 1);
+
+      quick(arr, position + 1 , right);
+    }
   }
 
 }
