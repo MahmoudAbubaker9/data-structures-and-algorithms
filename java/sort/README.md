@@ -27,6 +27,18 @@ Merge Sort is a Divide and Conquer algorithm. It divides the input array into tw
 ## Approach & Efficiency
 
 Time : O(n log n)
+Space : O(n)
+
+# QuickSort (code 28)
+
+# Challenge Summary
+
+Write a function called QuickSort that sort it using Quick Sort algorithm then return the sorted array.
+
+## Whiteboard Process
+![QuickSort](img/QuickSort.jpg)
+
+## Approach & Efficiency
+
+Time : O(n log n)
 Space : O(1)
-
-
