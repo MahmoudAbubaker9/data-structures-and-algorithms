@@ -52,16 +52,16 @@ class AppTest {
   public void quickSortTest1(){
     int[] array = {20,18,12,8,5,-2};
     int n=array.length;
-    int[] outputArray = sort.quickSort(array);
+    int[] outputArray = sort.quick(array,0,n-1);
     int[] expectedOutput = {-2,5,8,12,18,20};
     assertArrayEquals(expectedOutput,outputArray);
   }
 
   @Test
-  public void quickSortTest2(){
+  public void quickSortSimilarTest(){
     int[] array = {5,12,7,5,5,7};
     int n=array.length;
-    int[] outputArray = sort.quickSort(array);
+    int[] outputArray = sort.quick(array,0,n-1);
     int[] expectedOutput = {5,5,5,7,7,12};
     assertArrayEquals(expectedOutput,outputArray);
   }
