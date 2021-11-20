@@ -106,13 +106,9 @@ public class Sort {
     arr[low] = temp;
   }
 
-  public int[] quickSort(int[] arr){
-    int n= arr.length;
-    quick(arr, 0, n-1);
-    return arr;
-  }
 
-  private static void quick(int[] arr, int left, int right){
+
+  int[] quick(int[] arr, int left, int right){
     if(left < right){
       int position = partition(arr, left, right);
 
@@ -120,6 +116,7 @@ public class Sort {
 
       quick(arr, position + 1 , right);
     }
+    return arr;
   }
 
 }
