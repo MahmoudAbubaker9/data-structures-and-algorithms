@@ -1,6 +1,7 @@
 package hashTables;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 
 public class hashTable<K, V> {
@@ -72,7 +73,15 @@ public class hashTable<K, V> {
   }
 
   public boolean contains(K key) {
-    return get(key) != null;
+    int bucketIndex = hash(key);
+    int hashKey = hashKey(key);
+    Node<K, V> head = array.get(bucketIndex);
+    while (head != null) {
+      if (head.key.equals(key) && hashKey == head.hashCode)
+        return true;
+    }
+
+    return false;
   }
 
   public int getSize() {
@@ -81,6 +90,24 @@ public class hashTable<K, V> {
 
   public boolean isEmpty() {
     return getSize() == 0;
+  }
+
+  public static String firstRepeatedWord(String Word) {
+    String [] words = Word.toLowerCase(Locale.ROOT).split(" ");
+    hashTable<String, Integer> hashTable = new hashTable<>();
+    for (int i = 0; i < words.length; i++) {
+      if(words[i].contains(",")){
+        /// substring is for remove "," from array
+        words[i] = words[i].substring(0, words[i].length()-1);
+      }
+      if(!words[i].equals("")){
+        if (hashTable.get(words[i]) != null){
+          return words[i];
+        }
+        hashTable.add(words[i],i);
+      }
+    }
+    return "there is no repeated word";
   }
 
 }

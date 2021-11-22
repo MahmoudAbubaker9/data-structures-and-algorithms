@@ -43,3 +43,19 @@ Time: BigO(n), Space: BigO(n)
 4. hash(key): return the index of the key.
 
 5. contains(key): check if the key exist in the hash table.
+
+
+# Challenge Summary
+Write a function called repeated word that finds the first word to occur more than once in a string
+
+## Whiteboard Process
+![hashmaprepeatedword](hashmaprepeatedword.jpg)
+
+## Approach & Efficiency
+
+Time : O(n)
+
+Space : O(n)
+
+
+
