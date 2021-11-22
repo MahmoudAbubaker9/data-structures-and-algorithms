@@ -1,6 +1,6 @@
-## Hash Tables
+# Hash Tables
 
-# Hashtables
+## Hashtables
 Hash is the output of an operation of converting a string value to a value that could be used for either security or some other purpose.
 
 
@@ -56,6 +56,38 @@ Write a function called repeated word that finds the first word to occur more th
 Time : O(n)
 
 Space : O(n)
+
+
+## Repeated Word
+
+# Challenge Summary
+Write a function called repeated word that finds the first word to occur more than once in a string
+
+## Whiteboard Process
+![hashmaprepeatedword](hashmaprepeatedword.jpg)
+
+## Approach & Efficiency
+
+Time : O(n)
+
+Space : O(n)
+
+## Tree Intersection
+
+# Challenge Summary
+Write a function TreeIntersection  that Find common values in 2 binary trees.
+
+## Whiteboard Process
+![TreeIntersection](TreeIntersection.jpg)
+
+## Approach & Efficiency
+
+Time : O(n)
+
+Space : O(n)
+
+
+
 
 
 

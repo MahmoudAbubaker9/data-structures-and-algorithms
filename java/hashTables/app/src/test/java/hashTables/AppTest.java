@@ -3,6 +3,8 @@
  */
 package hashTables;
 
+import hashTables.TreeIntersection.TreeIntersection;
+import hashTables.TreeIntersection.TreeNode;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -74,4 +76,6 @@ class AppTest {
     assertEquals("there is no repeated word",repeatedWordTest.firstRepeatedWord(test3));
     assertEquals("a",repeatedWordTest.firstRepeatedWord(test4));
   }
+
+
 }
