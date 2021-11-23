@@ -6,6 +6,9 @@ package hashTables;
 import hashTables.TreeIntersection.TreeIntersection;
 import hashTables.TreeIntersection.TreeNode;
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -77,5 +80,26 @@ class AppTest {
     assertEquals("a",repeatedWordTest.firstRepeatedWord(test4));
   }
 
+  @Test
+  public void LeftJoinTest() {
+    HashMap hashMap1 = new HashMap();
+    HashMap hashMap2 = new HashMap();
+
+    hashMap1.put("fond", "enamored");
+    hashMap1.put("wrath", "anger");
+    hashMap1.put("diligent", "employed");
+    hashMap1.put("outfit", "garb");
+    hashMap1.put("guide", "usher");
+    hashMap2.put("fond", "averse");
+    hashMap2.put("wrath", "delight");
+    hashMap2.put("diligent", "idle");
+    hashMap2.put("guide", "follow");
+    hashMap2.put("flow", "jam");
+
+    hashTable leftJoin = new hashTable();
+    String expOutput = "[{diligent: employed, idle}, {outfit: garb, null}, {wrath: anger, delight}, {guide: usher, follow}, {fond: enamored, averse}]";
+    String ActOutput = leftJoin.leftJoin(hashMap1 , hashMap2).toString()
+    assertEquals( expOutput ,ActOutput );
+  }
 
 }
