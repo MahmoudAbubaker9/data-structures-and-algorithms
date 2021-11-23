@@ -86,6 +86,21 @@ Time : O(n)
 
 Space : O(n)
 
+## LEFT JOIN
+
+# Challenge Summary
+Write function call leftJoin that takes two Hashmaps as argement and The first hashmap is a word strings as keys, and a synonym of the key as values and the second hashmap the same if hashmap is similar key and two diffrent value will add the value to the same key in new arraylist and return only one data structure  
+
+
+## Whiteboard Process
+![leftJoin](leftJoin.jpg)
+
+## Approach & Efficiency
+
+Time : O(n)
+
+Space : O(n)
+
 
 
 

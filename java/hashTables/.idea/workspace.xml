@@ -5,54 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5a215ee-35b9-4787-99b1-aec6a21f2d30" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hashTables.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hashTables/TreeIntersection/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hashTables/TreeIntersection/TreeIntersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hashTables/TreeIntersection/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/bin/main/linkedList/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/bin/main/linkedList/LinkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/bin/main/linkedList/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linkedList/app/bin/test/linkedList/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sort/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/AnimalShelter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Brackets.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Cat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Dog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/PseudoQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/main/stackandqueue/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stackandqueue/app/bin/test/stackandqueue/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/BinarySearchTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/BinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/KNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/main/trees/TreeFizzBuzz.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trees/app/bin/test/trees/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTables/hashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTables/hashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/hashTables/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashTables/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/app/bin/main/sort/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/app/bin/main/sort/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sort/app/bin/test/sort/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sort/app/bin/test/sort/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +58,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.intersectionTreeTest1">
+  <component name="RunManager" selected="Gradle.AppTest.LeftJoinTest">
+    <configuration name="AppTest.LeftJoinTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hashTables.AppTest.LeftJoinTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AppTest.intersectionTreeTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.LeftJoinTest" />
         <item itemvalue="Gradle.AppTest.intersectionTreeTest1" />
         <item itemvalue="Gradle.AppTest.testHashTableAddingKeyValue" />
       </list>

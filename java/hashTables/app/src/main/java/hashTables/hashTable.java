@@ -1,8 +1,6 @@
 package hashTables;
 
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Objects;
+import java.util.*;
 
 public class hashTable<K, V> {
 
@@ -108,6 +106,19 @@ public class hashTable<K, V> {
       }
     }
     return "there is no repeated word";
+
+  }
+
+  public static List<String> leftJoin(HashMap map1, HashMap map2){
+    List<String> newList = new ArrayList<>();
+    for(Object i : map1.keySet()){
+      if(map1.containsKey(i)){
+        newList.add("{"+i+": "+ map1.get(i)+", "+ map2.get(i)+"}");
+      } else{
+        newList.add(i+": "+ map1.get(i)+", "+null);
+      }
+    }
+    return newList;
   }
 
 }
