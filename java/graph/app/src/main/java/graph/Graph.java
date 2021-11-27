@@ -17,15 +17,13 @@ public class Graph<T> {
   }
 
   public void addEdge(Node n1, Node n2){
-    if(graphList.contains(n1) && graphList.contains(n2)){
+    if(graphList.contains(n1) && graphList.contains(n2)) {
       Node current = n1;
-      while(current.next != null){
+      while (current.next != null) {
         current = current.next;
       }
       current.next = n2;
-      System.out.println("RIGHT");
-    } else
-      System.out.println("One or more of the values are not valid...");
+    }
   }
 
   public List<Node<T>> getNodes(){
