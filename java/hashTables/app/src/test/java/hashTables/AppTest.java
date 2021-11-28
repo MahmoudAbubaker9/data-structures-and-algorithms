@@ -98,7 +98,7 @@ class AppTest {
 
     hashTable leftJoin = new hashTable();
     String expOutput = "[{diligent: employed, idle}, {outfit: garb, null}, {wrath: anger, delight}, {guide: usher, follow}, {fond: enamored, averse}]";
-    String ActOutput = leftJoin.leftJoin(hashMap1 , hashMap2).toString()
+    String ActOutput = leftJoin.leftJoin(hashMap1 , hashMap2).toString();
     assertEquals( expOutput ,ActOutput );
   }
 
