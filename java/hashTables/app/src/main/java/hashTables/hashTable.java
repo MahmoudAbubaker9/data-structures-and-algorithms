@@ -112,10 +112,10 @@ public class hashTable<K, V> {
   public static List<String> leftJoin(HashMap map1, HashMap map2){
     List<String> newList = new ArrayList<>();
     for(Object i : map1.keySet()){
-      if(map1.containsKey(i)){
+      if(map2.containsKey(i)){
         newList.add("{"+i+": "+ map1.get(i)+", "+ map2.get(i)+"}");
       } else{
-        newList.add(i+": "+ map1.get(i)+", "+null);
+        newList.add("{"+i+": "+ map1.get(i)+", "+null+"}");
       }
     }
     return newList;

@@ -1,7 +1,6 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Graph<T> {
 
@@ -43,6 +42,29 @@ public class Graph<T> {
   public int size(){
     return graphList.size();
   }
+
+  public List<T> breadthFirst(Node node){
+    List<T> breadthList = new ArrayList<>();
+    Queue breadth = new LinkedList<>();
+    Set visited = new HashSet();
+
+    breadth.add(node);
+    visited.add(node);
+
+    while(!breadth.isEmpty()){
+      Node<T> front = (Node<T>)breadth.poll();
+      breadthList.add(front.value);
+
+      for (Node<T> value : getNeighbors(node)){
+        if(!visited.contains(value)){
+          visited.add(value);
+          breadth.add(value);
+        }
+      }
+    }
+    return breadthList;
+  }
+
 
   @Override
   public String toString() {

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5a215ee-35b9-4787-99b1-aec6a21f2d30" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTables/hashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTables/hashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/hashTables/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashTables/AppTest.java" afterDir="false" />
     </list>
@@ -56,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graph" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager" selected="Gradle.AppTest.LeftJoinTest">
@@ -155,5 +155,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/test/java/hashTables/AppTest.java</url>
+          <line>83</line>
+          <properties class="hashTables.AppTest" method="LeftJoinTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

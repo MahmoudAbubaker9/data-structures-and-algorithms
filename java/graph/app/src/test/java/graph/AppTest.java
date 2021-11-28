@@ -64,5 +64,53 @@ class AppTest {
     assertEquals("[A, B, C, D]", graph.toString());
 
   }
+
+  @Test void graphBreadthFirstTest1() {
+    Graph breadthFirst = new Graph();
+    Node n1 = new Node("A");
+    Node n2 = new Node("B");
+    Node n3 = new Node("C");
+    Node n4 = new Node("D");
+
+    breadthFirst.addNode(n1);
+    breadthFirst.addNode(n2);
+
+    assertEquals("[A]", breadthFirst.breadthFirst(n1).toString());
+    breadthFirst.addEdge(n1, n2);
+    assertEquals("[A, B]", breadthFirst.breadthFirst(n1).toString());
   }
+
+  @Test void graphBreadthFirstTest2() {
+    Graph breadthFirst = new Graph();
+    Node n1 = new Node("A");
+    Node n2 = new Node("B");
+    Node n3 = new Node("C");
+    Node n4 = new Node("D");
+
+    breadthFirst.addNode(n1);
+    breadthFirst.addNode(n2);
+    breadthFirst.addNode(n3);
+    breadthFirst.addEdge(n1, n2);
+    breadthFirst.addEdge(n1, n3);
+    assertEquals("[A, B, C]", breadthFirst.breadthFirst(n1).toString());
+  }
+
+  @Test void graphBreadthFirstTest3() {
+    Graph breadthFirst = new Graph();
+    Node n1 = new Node("A");
+    Node n2 = new Node("B");
+    Node n3 = new Node("C");
+    Node n4 = new Node("D");
+
+    breadthFirst.addNode(n1);
+    breadthFirst.addNode(n2);
+    breadthFirst.addNode(n3);
+    breadthFirst.addNode(n4);
+
+    breadthFirst.addEdge(n1, n2);
+    breadthFirst.addEdge(n1, n3);
+    breadthFirst.addEdge(n1, n4);
+    assertEquals("[B, C, D]", breadthFirst.breadthFirst(n2).toString());
+  }
+}
 
