@@ -3,7 +3,7 @@ package graph;
 import java.util.*;
 
 public class Graph<T> {
-
+  private final Map<String, Node> nodes = new HashMap<>();
   List<Node<T>> graphList;
 
   Graph(){
@@ -64,6 +64,21 @@ public class Graph<T> {
     }
     return breadthList;
   }
+/////////////////////////////////////////Code37
+
+  public String graphBusinessTrip(Graph graph,List<String> cities){
+    Integer cost=0;
+    for (int i=0;i<cities.size()-1;i++){
+      Node<String> vertex=new Node<>(cities.get(i));
+      Node<String> vertex1=new Node<>(cities.get(i+1));
+      if (((Map)graph.nodes.get(vertex)).get(vertex1)!=null){
+        cost+=((Integer)((Map)graph.nodes.get(vertex)).get(vertex1));
+        System.out.println(cost);
+      }
+    }
+    return cost > 0 ? "True, $" + cost : "False, $" + cost;
+  }
+////////////////////////////////////////////////
 
 
   @Override

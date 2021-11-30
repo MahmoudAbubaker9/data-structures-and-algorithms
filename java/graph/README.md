@@ -54,3 +54,21 @@ write a function which traverse a graph by breadth first concept , and return a 
 time : O(n^2) `nested loop`
 
 scape : O(n) `create new list and Set`
+
+# graph business trip [Code 37]
+
+# Challenge Summary
+
+write a function name business trip and find if the trip possible with direct flights
+
+
+## Whiteboard Process
+
+![graph-business-trip](graph-business-trip.jpg)
+
+## Approach & Efficiency
+
+time : O(n^2)
+
+scape : O(1) 
+
