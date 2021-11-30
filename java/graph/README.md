@@ -72,3 +72,19 @@ time : O(n^2)
 
 scape : O(1) 
 
+# graph depth first [Code 38]
+
+# Challenge Summary
+
+write a function called depth first that return a coolection of nodes in their per-order depth-first traversal order
+
+## Whiteboard Process
+
+![graph-depth-first](graph-depth-first.jpg)
+
+## Approach & Efficiency
+
+time : O(n^2)
+
+scape : O(N) 
+
